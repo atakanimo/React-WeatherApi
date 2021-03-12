@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap';
 import './NextDay.scss'
 import PhotoBulut from './../../Photos/Bulut.jpg';
 import { Animated } from "react-animated-css";
-import { animateScroll, Button } from 'react-scroll';
+import { animateScroll } from 'react-scroll';
 
 
 export default function NextDay(props) {
