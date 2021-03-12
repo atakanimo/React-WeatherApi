@@ -9,7 +9,6 @@ import { animateScroll } from 'react-scroll';
 
 export default function NextDay(props) {
 
-  const key = "93c797befa5240568ad213645210903";
   const weatherData = props.data;
   const weatherNow = weatherData.current.condition.text;
   const formElement = document.querySelector(".SearchForm");
