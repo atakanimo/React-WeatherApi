@@ -1,0 +1,56 @@
+.NextDay {
+  
+  Button {
+    padding: 0.8rem;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    margin-top: 5rem;
+    border: 0.2rem solid white;
+    font-size: larger;
+    font-weight: 600;
+  }
+    background-image: url("./../../Photos/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    .Text h1 {
+      text-align: center;
+     margin-bottom: 3rem;
+     text-decoration: underline;
+
+    }
+    .Next3Days .showForecast  {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;             
+        
+        .cards {
+          border: 0.15rem solid red;
+          border-radius: 0.9rem;
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+          color: white;
+          font-weight: bold;
+          border: 3px solid #f1f1f1;
+          padding: 10px;
+          align-items: center;
+          text-align: center;
+          margin-top: 30px;
+          height:"30rem"
+
+        }
+        hr {
+          margin-top: -10px;
+        }
+       Img {
+        width: 70px;
+        height: 70px;
+        margin-top: 1rem;
+       }
+}
+}
+
