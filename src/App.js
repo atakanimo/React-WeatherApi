@@ -5,6 +5,7 @@ import NextDay from './Components/NextDays/NextDay'
 import { render } from '@testing-library/react';
 import { Animated } from "react-animated-css";
 import { animateScroll } from 'react-scroll';
+import axios from 'axios';
 
 function App() {
 
@@ -17,12 +18,20 @@ function App() {
     getData();
   }, [inputCity]);
 
+  // function getData() {
+  //   fetch("https://api.weatherapi.com/v1/forecast.json?key=" + key + "&q=" + inputCity + "&days=3")
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       setWeather(data);
+  //     });
+  // }
   function getData() {
-    fetch("https://api.weatherapi.com/v1/forecast.json?key=" + key + "&q=" + inputCity + "&days=3")
-      .then(response => response.json())
-      .then(data => {
-        setWeather(data);
-      });
+    axios.get("https://api.weatherapi.com/v1/forecast.json?key=" + key + "&q=" + inputCity + "&days=3")
+    .then(res => {
+      const data = res.data;
+      setWeather(data);
+      console.log(data);
+    })
   }
 
   return (
