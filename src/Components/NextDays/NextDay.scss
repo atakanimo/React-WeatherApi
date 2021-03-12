@@ -52,5 +52,85 @@
         margin-top: 1rem;
        }
 }
+// @media (min-width: 375px) {    
+
+//   Button {
+//     padding: 0.8rem;
+//     margin-top: 5rem;
+//     border: 0.2rem solid white;
+//     font-size: large;
+//     font-weight: 500;
+//   }
+//     .Text h1 {
+//       font-size: xx-large;
+//      margin-bottom: 3rem;
+//      text-decoration: underline;
+
+//     }
+//     .Next3Days .showForecast  {
+//         display: block; 
+        
+//         .cards {          
+//           font-weight: bold;
+//           border: 3px solid #f1f1f1;
+//           padding: 5px;
+//           margin-top: 30px;
+//           width:17rem;
+//         }
+//         hr {
+//           margin-top: -10px;
+//         }
+//        Img {
+//         width: 70px;
+//         height: 70px;
+//         margin-top: 1rem;
+//        }
+// }
+// }
+@media (min-width: 2440px) {    
+
+    .Text h1 {
+     margin-bottom: 5rem;
+     font-size: 55px;
+     text-decoration: underline;
+    }
+    .Next3Days .showForecast  {
+      display: flex;
+        justify-content: space-evenly;
+        align-items: center; 
+        
+        .cards {
+          font-weight: bold;
+          padding: 10px;
+          margin-top: 30px;
+          height:29rem;
+          width:20rem;
+        }
+        .cardText {
+          font-size: 25px;
+        }
+        .cardTitle {
+          font-size: 25px;
+        }
+        h2 {
+          font-size: 45px;
+          text-decoration: underline;
+        }
+       Img {
+        width: 80px;
+        height: 80px;
+        margin-top: 1rem;
+       }
+    }
+    .buttonTop {
+      padding: 1rem 2rem 1rem 2rem;
+      margin-top: 12rem;
+      border: 0.21rem solid white;
+      font-size: x-large;
+      font-weight: 700;
+    }
+  }
+
 }
+
 

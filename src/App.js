@@ -18,13 +18,6 @@ function App() {
     getData();
   }, [inputCity]);
 
-  // function getData() {
-  //   fetch("https://api.weatherapi.com/v1/forecast.json?key=" + key + "&q=" + inputCity + "&days=3")
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       setWeather(data);
-  //     });
-  // }
   function getData() {
     axios.get("https://api.weatherapi.com/v1/forecast.json?key=" + key + "&q=" + inputCity + "&days=3")
     .then(res => {
@@ -56,13 +49,13 @@ function App() {
               <Animated animationIn="bounceInLeft" animationOut="fadeOut" animationInDelay="200" isVisible={true}>
                 <div className="Card">
                   <div >
-                    <Card className="cards" style={{ width: '18rem' }}>
+                    <Card className="cards" >
                       <Card.Img variant="top" src={weatherData.current.condition.icon} alt={'asdsadas'} />
                       <Card.Body>
                         <hr />
                         <Card.Title className="cardTitle">{weatherData.location.name} <br></br>  <span>{weatherData.current.condition.text}</span></Card.Title>
                         <Card.Text className="cardText">
-                          <h2>{weatherData.current.temp_c}</h2>
+                          <h2>{weatherData.current.temp_c}°</h2>
                           <hr />
                           <p>Reel Feel: {weatherData.current.feelslike_c}</p>
                         </Card.Text>
@@ -76,7 +69,7 @@ function App() {
                   animateScroll.scrollToBottom();
                   render(
                     <NextDay
-                      data={weatherData}
+                      weatherData={weatherData}
                       city={value}
                     />
                   )

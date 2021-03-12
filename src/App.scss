@@ -29,6 +29,7 @@
       font-size: larger;
       margin-top: 100px;
       margin-bottom: 50px;
+      
      }
      .Card {
        margin-top: 50px;
@@ -54,6 +55,7 @@
         font-weight: bold;
         border: 3px solid #f1f1f1;
         padding: 15px;   
+        width: 18rem;
         
         .cardTitle {
           font-size: 30px;
@@ -75,7 +77,201 @@
     margin-top: 70px;
 
   }
+
+  //MEDİA
+  @media (min-width: 375px) {    
+    .SearchForm {
+
+      input {
+        width: 60%;
+        margin-top: 50px;
+        margin-bottom: 0px;
+      }
+     .Card {
+      .cards {
+        margin-top: 10px;
+        padding: 0px;
+        width: 16rem;
+      }
+     }
+    }
+    .content .Get3Days {
+    
+      margin-top: 50px;    
+    }
 }
+@media (max-height: 667px) {  //IPHONE 6 7 8 
+  .SearchForm {
+  
+    input {
+      width: 60%;
+      height: 50px;
+      font-size: larger;
+      margin-top: 50px;
+      margin-bottom: 0px;
+     }
+     .Card {
+       margin-top: 40px;
+        
+       Img {
+        margin-top: 1rem;
+        width: 60px;
+        height: 60px;
+      }
+      .cards {
+        color: white;
+        padding: 4px;   
+        width: 17rem;
+        
+        .cardTitle {
+          font-size: 23px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        } 
+        .cardText {
+          margin :20px
+        }
+         .cardButton {
+         
+        }
+      }    
+    }
+  }
+  .content .Get3Days {  
+    margin-top: 40px;  
+  }
+}
+@media (min-width: 768px) {    
+  .SearchForm {
+    
+    input {
+      width: 50%;
+      height: 60px;
+      border-radius: 0.5rem;
+      font-size: larger;
+      margin-top: 100px;
+      margin-bottom: 50px;      
+     }
+     .Card {
+    
+      .cards {
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        padding: 15px;   
+        width: 18rem;
+        
+        .cardTitle {
+          font-size: 30px;
+          margin-top: 15px;
+          margin-bottom: 15px;
+        } 
+        .cardText {
+          margin :30px
+        }
+         .cardButton {
+         
+        }
+      }
+    
+    }
+  }
+  .content .Get3Days {
+  
+    margin-top: 100px;
+    padding: 20px;  
+  }
+}
+@media (min-width: 1024px) {    
+  .SearchForm {
+    
+    input {
+      margin-bottom: 10px;      
+     }
+     .Card {
+    
+      .cards {
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        padding: 15px;   
+        width: 19rem;
+        
+        .cardTitle {
+          font-size: 30px;
+          margin-top: 15px;
+          margin-bottom: 15px;
+        } 
+        .cardText {
+          margin :25px
+        }
+         .cardButton {
+         
+        }
+      }
+    
+    }
+  }
+  .content .Get3Days {
+  
+    margin-top: 80px;
+    padding: 20px;  
+  }
+}
+@media (min-width: 2440px) { 
+  .SearchForm {
+
+    input {
+      width: 35%;
+      height: 60px;
+      font-size: larger;
+      margin-top: 150px;
+      margin-bottom: 75px;
+      
+     }
+     .Card {
+       margin-top: 75px;
+       Img {
+        margin-top: 1.5rem;
+        width: 85px;
+        height: 85px;
+      }
+      .cards {
+        padding: 18px;   
+        width: 24rem;
+        
+        .cardTitle {
+          font-size: 35px;
+          margin-top: 15px;
+          margin-bottom: 15px;
+        } 
+        .cardText {
+          margin :40px
+        }
+        p {
+          font-size: 25px;
+        }
+        h2 {
+          font-size: 45px;
+        }
+         .cardButton {
+         
+        }
+      }    
+    }
+    .content .Get3Days {
+
+      margin-top: 150px;
+      padding: 30px;  
+    }
+  }
+      
+}
+
+
+}
+
+
 
 
 
