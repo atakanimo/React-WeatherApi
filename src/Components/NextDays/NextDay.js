@@ -1,8 +1,8 @@
 import React from 'react'
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { Card } from 'react-bootstrap';
 import './NextDay.scss'
-import PhotoBulut from './../../Photos/Bulut.jpg';
+import PhotoCloud from './../../Photos/Bulut.jpg';
 import { Animated } from "react-animated-css";
 import { animateScroll } from 'react-scroll';
 
@@ -13,9 +13,6 @@ export default function NextDay(props) {
   const weatherNow = weatherData.current.condition.text;
   const formElement = document.querySelector(".SearchForm");
 
-  useEffect(() => {
-  
-  });
 
   changePhoto();
 

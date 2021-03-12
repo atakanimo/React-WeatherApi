@@ -18,7 +18,7 @@ function App() {
   }, [inputCity]);
 
   function getData() {
-    fetch("http://api.weatherapi.com/v1/forecast.json?key=" + key + "&q=" + inputCity + "&days=3")
+    fetch("https://api.weatherapi.com/v1/forecast.json?key=" + key + "&q=" + inputCity + "&days=3")
       .then(response => response.json())
       .then(data => {
         setWeather(data);
