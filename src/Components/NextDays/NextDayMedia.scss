@@ -1,6 +1,6 @@
 .NextDay {
     
-    @media (min-width: 375px) {   //iphone 6 7 8 x
+    @media (max-width: 412px) {   //iphone 6 7 8 x
 
     .Text h1 {
       font-size: xx-large;
@@ -43,7 +43,7 @@
     margin-bottom: 1rem;
   }
 }
-@media (min-width: 768px) and (max-height: 1024px){  //ipad
+@media (min-width: 768px) and (max-height: 1024px) {  //ipad
 
     .Text h1 {
       font-size: xx-large;
@@ -85,6 +85,49 @@
     margin-top: 5rem;
     margin-bottom: 1rem;
   }
+}
+@media (min-width: 1024px) and (max-height: 1366px) {  //ipad pro
+
+  .Text h1 {
+    font-size: xx-large;
+   margin-bottom: 3rem;
+   margin-top: 3rem;
+  }
+  .Next3Days {
+      
+      .showForecast  {
+      display: flex;
+      flex-direction: row;   
+ 
+      .cards {          
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        padding: 4px;
+        margin-top: 25px;
+        width:15rem;
+        .cardText {
+          font-size: 15px;
+        }
+        .cardTitle {
+          font-size: 20px;
+        }
+        h2 {
+          font-size: 30px;
+          text-decoration: underline;
+        }
+        Img {
+          width: 65px;
+          height: 65px;
+          margin-top: 1rem;
+         }
+      }      
+  }
+}
+  Button {
+   padding: 0.8rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
 }
 @media (min-width: 2440px) {    
 

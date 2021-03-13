@@ -1,14 +1,5 @@
 .NextDay {
   
-  Button {
-    padding: 0.8rem;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    margin-top: 5rem;
-    border: 0.2rem solid white;
-    font-size: larger;
-    font-weight: 600;
-  }
     background-image: url("./../../Photos/background.jpeg");
     background-size: cover;
     background-position: center;
@@ -16,8 +7,9 @@
     height: 100vh;
     
     display: table-cell;
-    text-align: center;
     vertical-align: middle;
+    text-align: center;
+    
     .Text h1 {
       text-align: center;
      margin-bottom: 3rem;
@@ -51,6 +43,15 @@
         height: 70px;
         margin-top: 1rem;
        }
+}
+Button {
+  padding: 0.8rem;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  margin-top: 5rem;
+  border: 0.2rem solid white;
+  font-size: larger;
+  font-weight: 600;
 }
 }
 

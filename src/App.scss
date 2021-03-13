@@ -1,97 +1,76 @@
 .App {
+  background-image: url("./Photos/backgroundMain.jpeg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(0.1px);
+  width: 100vw;
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
-   display: flex;
-  justify-content: center;
 
-  Button {
-   
+  .container-Form {
+    .SearchForm {
+      input {
+        width: 60%;
+        height: 60px;
+        border-radius: 0.5rem;
+        font-size: larger;
+        margin-bottom: 50px;
+      }
+    }
   }
+  .container-Card {
 
-  div.cards.card {
-     align-items: center;   
-      
-  }
-  .SearchForm {
-    background-image: url("./Photos/backgroundMain.jpeg");
-    background-size: cover;
-    background-position: center;
-    filter: blur(0.4px);
-    width: 100%;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
     
-    input {
-      width: 35%;
-      height: 60px;
-      border-radius: 0.5rem;
-      font-size: larger;
-      margin-top: 100px;
-      margin-bottom: 50px;
-      
-     }
-     .Card {
-       margin-top: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    
-      hr {
-        margin-top: 0px;
-      }
-    
-       Img {
-        margin-top: 1rem;
-        width: 75px;
-        height: 75px;
-      }
+
+    .Card-row .content {
       .cards {
+        align-items: center;
         border: 0.15rem solid red;
         border-radius: 0.9rem;
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
         color: white;
         font-weight: bold;
         border: 3px solid #f1f1f1;
-        padding: 15px;   
-        width: 18rem;
-        
+        padding: 10px;
+        width: 17rem;
+        height: auto;
+        Img {
+          margin-top: 1rem;
+          width: 75px;
+          height: 75px;
+        }
+
         .cardTitle {
-          font-size: 30px;
+          font-size: 25px;
           margin-top: 15px;
           margin-bottom: 15px;
-        } 
-        .cardText {
-          margin :30px
         }
-         .cardButton {
-         
+        hr {
+          margin-top: 0px;
+        }
+        .cardText {
+          margin: 25px;
+        }
+        .cardButton {
           padding: 0.6rem;
           border-width: 2px;
-          background-color: rgb(0,0,0); /* Fallback color */
-          background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+          background-color: rgb(0, 0, 0); /* Fallback color */
+          background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
         }
       }
-    
     }
-    .content .Get3Days {
-    
-      margin-top: 70px;
-      padding: 0.5rem;
-      border-width: 2px;
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    } 
   }
- 
 
+  .content .Get3Days {
+    margin-top: 60px;
+    padding: 0.6rem;
+    border-width: 3px;
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  }
 }
-
-
- 
-
-
-
-
-
-
-
-
