@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Card } from 'react-bootstrap';
 import './NextDay.scss'
+import './NextDayMedia.scss'
 import { Animated } from "react-animated-css";
 import { animateScroll } from 'react-scroll';
 

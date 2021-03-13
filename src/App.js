@@ -1,4 +1,5 @@
 import './App.scss';
+import './AppMedia.scss';
 import { useState, useEffect } from 'react';
 import { Card, Button } from 'react-bootstrap'
 import NextDay from './Components/NextDays/NextDay'
@@ -82,7 +83,6 @@ function App() {
         }
 
       </form>
-
     </div>
   );
 }
