@@ -66,6 +66,7 @@ function App() {
                     </Card>
                   </div>
                 </div>
+                <Animated animationIn="bounce" animationOut="fadeOut" animationInDelay="800"  isVisible={true}>
                 <Button className="Get3Days" variant="dark" onClick={() => {
                   animateScroll.scrollToBottom();
                   render(
@@ -75,6 +76,7 @@ function App() {
                     />
                   )
                 }}>Click For 3 Days Forecast</Button>{' '}
+                </Animated>
               </Animated>
 
             </div>

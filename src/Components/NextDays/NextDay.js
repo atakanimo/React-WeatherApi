@@ -60,9 +60,11 @@ export default class NextDay extends Component {
                 </Card.Body>
               </Card>         
             </div>
+            <Animated animationIn="bounce" animationOut="fadeOut" animationInDelay="800"  isVisible={true}>
             <button className="buttonTop" onClick={() => {
               animateScroll.scrollToTop(); 
             }}>Back the Top!</button>
+            </Animated>
           </div>
         </div>
       )
